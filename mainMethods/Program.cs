@@ -10,12 +10,20 @@ namespace mainMethods
     {
         public static void Main(string[] args)
         {
-            NewInt one = new NewInt() { Value = 29, Valuedec = 29.9M, Valuestr = "30"};
+            int one = 19;
+            NewInt One = new NewInt();
 
+            decimal two = 29.1M;
+            NewInt Two =  new NewInt ();
 
-            Console.WriteLine("In 10 years, I will be "+ one.Math1(one));
-            Console.WriteLine("This must add decimals and return an integer: " + one.Math2(one));
-            Console.WriteLine("This must take a string, convert to int and return the result of a math operation: " + one.Math3(one));
+            string three = "39";
+            NewInt Three = new NewInt();
+
+            
+
+            Console.WriteLine("In 10 years, I will be "+ One.Math1(one));
+            Console.WriteLine("This must add decimals and return an integer: " + Two.Math1(two));
+            Console.WriteLine("This must take a string, convert to int and return the result of a math operation: " + Three.Math1(three));
             Console.ReadLine();
 
 

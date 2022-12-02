@@ -9,24 +9,21 @@ namespace mainMethods
 {
     public class NewInt
     {
-        public int Value { get; set; }
-        public decimal Valuedec { get; set; }
-        public string Valuestr { get; set; }
 
-        public int Math1(NewInt one)
+        public int Math1(int one)
         {
-            return one.Value+10;
+            return one + 10;
         }
 
-        public decimal Math2(NewInt one)
+        public int Math1(decimal two)
         {
-            return Convert.ToInt32(one.Valuedec + 1.2M);
+            return Convert.ToInt32(two + 9.9M);
         }
 
-        public string Math3(NewInt one)
+        public int Math1(string three)
         {
-            Convert.ToInt32(one.Valuestr);
-            return one.Valuestr + 1;
+            int Three = Convert.ToInt32(three);
+            return Three + 10;
         }
 
 
